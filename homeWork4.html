@@ -1,0 +1,173 @@
+<DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<title>Ура!</title>
+<link rel="stylesheet" type="text/css" href="test.css">
+<link href='http://fonts.googleapis.com/css?family=Economica:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<style>
+div.header {
+	background: #a64dff;
+	width: 100%;
+}
+div.subheader {
+	background: #f5f5f5;
+	width: 100%;
+	position: absolute;	
+	display: none;
+}
+
+div.page {
+	width: 100%;
+}
+div.pager {
+	width: 900px;
+	margin: 0 auto;
+}
+li.inline-block {
+	color: white;
+	font-size:38px;
+	font-weight: bold;
+	display: inline-block;
+	font-family: Economica;
+	padding: 10 10px;
+	list-style-type: none;
+	}
+
+ li.sub {
+	color: darkgray;
+		}
+
+ li.float:hover,
+ li.inline-block:hover {
+ 	background: #f5f5f5;
+ 	color: darkgray;
+ 	border-radius: 0px
+
+ }
+
+ li.float {
+    float:left;
+    font-size:40px;
+	font-weight: bold;
+	color: white;
+	font-family: Economica;
+	padding: 10 10px;
+	list-style-type: none;
+	margin-top:-41px;
+	text-transform: uppercase;
+ }
+ li {
+ 	font-size:25px;
+	font-weight: bold;
+	color: #a64dff;
+	display: inline-block;
+	font-family: Economica;
+	padding: 10 20px;
+	text-transform: uppercase;
+	border-radius: 10px;
+
+ }
+ li:hover {
+ 	background: #a64dff;
+ 	color: white;
+
+ }
+ li:nth-child(-n+2) a:before{
+    content: "<< ";
+ }
+ a {
+    text-decoration: none;
+ }
+  li:nth-last-child(-n+2) a:after{
+    content: " >>";
+ }
+  ul {
+  	padding: 0;
+  	margin: 0;
+  }
+  .ul_sub {
+  	-display: none;
+  }
+  .ul_menu {
+
+  }
+   .ul_menu:hover {
+  	display: inline-block;
+  }
+
+  div.menu {
+	width: 900px;
+	margin: 0 auto;
+	-padding: 25px;
+}
+div.menu:hover ~ div.subheaer {
+	display: block;
+}
+   
+</style>
+
+<div class='header'>
+	<div class="menu">
+		<ul class="ul_menu">
+			<li class='inline-block'>Home</li>
+			<li class='inline-block'>News</li>
+			<li class='inline-block'>Economics</li>
+			<li class='inline-block'>Local</li>
+			<li class='inline-block'>Sport</li>
+			<li class='inline-block'>Culture</li>
+			<li class='inline-block'>Travels</li>
+		</ul>
+	</div>
+	<div class='subheader'>
+	<div class="menu">
+		<ul class="ul_menu ul_sub">
+			<li class='inline-block sub'>Home</li>
+			<li class='inline-block sub'>News</li>
+			<li class='inline-block sub'>Economics</li>
+			<li class='inline-block sub'>Local</li>
+			<li class='inline-block sub'>Sport</li>
+			<li class='inline-block sub'>Culture</li>
+			<li class='inline-block sub'>Travels</li>
+		</ul>
+	</div>
+</div>
+</div>
+
+
+<br>
+<!-- <div class='header'>
+	<div class="menu">
+		<ul>
+			<li class="float">Home</li>
+			<li class="float">News</li>
+			<li class="float">Economics</li>
+			<li class="float">Local</li>
+			<li class="float">Sport</li>
+			<li class="float">Culture</li>
+			<li class="float">Travels</li>
+		</ul>
+	</div>
+</div>
+<br>
+<div class='page'>
+	<div class="pager">
+		<ul>
+			<li><a href="">First</a></li>
+			<li><a href="">Prev</a></li>
+			<li>1</li>
+			<li>2</li>
+			<li>...</li>
+			<li>5</li>
+			<li>6</li>
+			<li>7</li>
+			<li>8</li>
+			<li>9</li>
+			<li><a href="">Next</a></li>
+			<li><a href="">Last</a></li>
+		</ul>
+	</div>
+</div> -->
+</body>
+

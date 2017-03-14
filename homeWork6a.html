@@ -1,0 +1,384 @@
+<DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<title>Ура!</title>
+<link rel="stylesheet" type="text/css" href="test.css">
+<link href='http://fonts.googleapis.com/css?family=Economica:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<style>
+.offers_box {
+	border: 3px solid #ee8129;
+	border-radius: 5px;	
+	font-family: Trebuchet MS;
+	width: 300px;
+	text-align: center;
+	display: inline-block;
+	box-shadow: 0 0 10px #9f9f9f;
+	z-index: 1;
+	position: relative;
+}
+.offers_box_header {
+	background-color: #ee8129;
+	color: white;
+	font-size: 24px;
+	padding: 20px 0;
+}
+.offers_box_content {
+	background-color: white;
+}
+.offers_box_title {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 24px;
+	color: #35495a;
+}
+.offers_box_price {
+	font-size: 72px;
+	font-weight: bold;
+	position: relative;
+	color: #35495a;
+	padding-bottom: 20px;
+	left: -26px;
+	letter-spacing: -5px;
+}
+.offers_box_price:before {
+	content: '$ ';
+	position: absolute;
+	top: 10px;
+	left:95px;
+	font-size: 20px;
+
+}
+.offers_box_price:after {
+	content: " Monthly";
+	position: absolute;
+	bottom: 20px;
+	font-size: 17px;
+	letter-spacing: 0px;
+}
+.offers_box_list li:nth-child(even){
+	background-color: #f5f5f6;
+}
+.offers_box_list {
+	padding: 0;
+	margin: 0 20px;
+
+}
+.offers_box_list  li {
+	background-color: #e8f2fb;
+	color: #888c94;
+	list-style-type: none;
+	padding: 5px 0; 
+	font-size: 15px;
+	border-bottom: 2px solid white;
+	text-align: left;
+	padding-left:27%;
+}
+.offers_box_list li:before {
+	content: "";
+	background-image: url(img.png);
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	left: 60px;
+}
+.offers_box_button {
+	width: 87%;
+	color: white;
+	font-weight: bold;
+	border-radius: 5px;
+	border-bottom:3px solid #b3560b;
+	background-color: #ee8129;
+	margin: 20px 0px 35px 0px;
+	padding: 10px 0;
+	display: inline-block;
+	
+}
+.offers_box_button:hover {
+	border-bottom: none;
+	background-color: #d47f3b;
+	margin-bottom: 38px;
+}
+.offers {
+	min-width: 1000px;
+	text-align: center;	
+}
+.offers_title {
+	padding: 20px;
+	font-size: 40px;
+	text-transform: uppercase;
+}
+.standart_box_header {
+	background-color: #37c2d3;
+	color: white;
+	font-size: 24px;
+	padding: 15px 0;
+	border-radius: 5px 0px 0px 0px;	
+}
+.standart_box {
+	border: 1px solid #e8eaec;
+	border-right: none;
+	border-radius: 5px 0px 0px 5px;	
+	font-family: Trebuchet MS;
+	width: 300px;
+	text-align: center;
+	display: inline-block;
+	position: relative;
+}
+.ultimate_box_header {
+	background-color: #1cb79a;
+	color: white;
+	font-size: 24px;
+	padding: 15px 0;
+	border-radius: 0px 5px 0px 0px;	
+}
+.ultimate_box {
+	border: 1px solid #e8eaec;
+	border-left: none;
+	border-radius: 0px 5px 5px 0px;	
+	font-family: Trebuchet MS;
+	width: 300px;
+	text-align: center;
+	display: inline-block;
+	z-index: 0;
+	position: relative;
+}
+.blue_button {
+	margin: 20px 0px 25px 0px;
+	background-color: #3371a6;	
+	border-bottom:3px solid #16436a;
+}
+.blue_button:hover {
+	border:none;
+	margin: 20px 0px 28px 0px;
+	background-color: #16436a;
+}
+.testimonials {
+	background-image: url(backLes6.png);
+	background-size: 100%;
+	width: 100%;
+	padding: 20px 0;
+	text-align: center;
+	font-family: Trebuchet MS;
+}
+
+.testimonials_titles {
+	color:#3170a8;
+	margin-bottom: 20px;
+	font-size: 40px;
+	text-transform: uppercase;
+}
+.testimonials_first_world {
+	color:#ee8129;
+}
+.testimonials_list {
+	width:1022px;
+	margin: 0 auto;
+	display: inline-block;
+}
+.testimonials_list_block {
+	margin-right: 30px;
+	position: relative;
+	width: 470px;
+	display: inline-block;
+	padding: 20px 0;
+	vertical-align: top;
+}
+.testimonials_img {
+	position: absolute;
+	top: 20px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.testimonials_content {
+	margin-left: 120px;
+	background-color: white;
+	padding: 15px 25px 15px 20px;
+	position: relative;
+}
+.testimonials_content_rectangle {
+	border: 15px solid transparent;
+	border-right: 20px solid white;
+	position: absolute;
+	top: 20px;
+	left:-30px;
+	width: 0;
+	height: 0;
+}
+.testimonials_client {
+	color:#3170a8;	
+	font-size: 18px;
+	font-style: italic;
+	font-weight: bold;
+	
+}
+.testimonials_client_border{
+	border-bottom: 1px dashed #666666;
+	padding-top: 10px;
+}
+.testimonials_client_name {
+	float: left;
+}
+.testimonials_client_name:before {
+	content: "- ";
+}
+.testimonials_client_status {
+	float: right;
+}
+.testimonials_content_text {
+	text-align: left;
+}
+
+.top_banner {
+	background-image: url(banner.jpg);
+	background-size: 100%;
+	color: white;
+	min-width: 1000px;
+	height: 580px;
+	padding: 20px 0;
+	text-align: center;
+	font-family: Trebuchet MS;
+}
+.header_menu > li{
+	display: inline-block;
+	margin: 0px 10px;
+	padding: 0px;
+	list-style-type: none;
+}
+.header_menu {
+	position: relative;
+	top: 0px;
+	right: 0px;
+}
+</style>
+<div class="header">
+	<div class="company_name"><span class="testimonials_first_world">Company</span> Name</div>
+	<div class="menu">
+			<ul class="header_menu">	
+				<li>Home</li>
+				<li>About</li>
+				<li>Portfolio</li>
+				<li>Services</li>
+				<li>Prices</li>
+				<li>Contact</li>
+			</ul>
+	</div>
+</div>
+<div class="top_banner">
+	<div>We are specialist in Responsive designs, Stationary And wordpress Themes</div>
+	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+</div>
+<div class="advantage"></div>
+<div class="about"></div>
+
+<div class="offers">
+	<div class="offers_title">We have a very flexible offers for you choose</div>
+	<div class="standart_box">
+		<div class="standart_box_header">
+			STANDART
+		</div>
+		<div class="offers_box_content">
+			<div class="offers_box_title">ICONIC GRAPHICS</div>
+			<div class="offers_box_price">10</div>
+			<ul class="offers_box_list">
+				<li>PHP, PERL, ASP, JSP</li>
+				<li>SEMI DEDICATED</li>
+				<li>Staging or Production</li>
+				<li>Unlimited e-Mails</li>
+			</ul>
+			<a href="" class="offers_box_button blue_button">ENROLL TODAY</a>
+		</div>
+	</div><div class="offers_box">
+		<div class="offers_box_header">
+			BEST VALUE
+		</div>
+		<div class="offers_box_content">
+			<div class="offers_box_title">ICONIC GRAPHICS</div>
+			<div class="offers_box_price">25</div>
+			<ul class="offers_box_list">
+				<li>PHP, PERL, ASP, JSP</li>
+				<li>SEMI DEDICATED</li>
+				<li>Staging or Production</li>
+				<li>Unlimited e-Mails</li>
+			</ul>
+			<a href="/" class="offers_box_button">ENROLL TODAY</a>
+		</div>
+	</div><div class="ultimate_box">
+		<div class="ultimate_box_header">
+			ULTIMATE
+		</div>
+		<div class="offers_box_content">
+			<div class="offers_box_title">ICONIC GRAPHICS</div>
+			<div class="offers_box_price">35</div>
+			<ul class="offers_box_list">
+				<li>PHP, PERL, ASP, JSP</li>
+				<li>SEMI DEDICATED</li>
+				<li>Staging or Production</li>
+				<li>Unlimited e-Mails</li>
+			</ul>
+			<a href="/" class="offers_box_button blue_button">ENROLL TODAY</a>
+		</div>
+	</div>
+</div>
+
+<div class="testimonials">
+	<div class="testimonials_titles"><span class="testimonials_first_world">What</span> client says</div>
+	<div class="testimonials_list">
+		
+		<div class="testimonials_list_block">
+			<img class="testimonials_img" src="client.png">
+			<div class="testimonials_content">
+				<div class="testimonials_content_rectangle"></div>
+				<div class="testimonials_client">
+					<div class="testimonials_client_name">Staciya Trollio</div>
+					<div class="testimonials_client_status">Customer</div>			
+				</div>	
+				<div class="testimonials_client_border">&nbsp;</div>
+				<p class="testimonials_content_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+			</div>
+		</div>
+
+		<div class="testimonials_list_block">
+			<img class="testimonials_img" src="client.png">
+			<div class="testimonials_content">
+				<div class="testimonials_content_rectangle"></div>
+				<div class="testimonials_client">
+					<div class="testimonials_client_name">Staciya Trollio</div>
+					<div class="testimonials_client_status">Customer</div>			
+				</div>	
+				<div class="testimonials_client_border">&nbsp;</div>
+				<p class="testimonials_content_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the </p>
+			</div>
+		</div>
+		<div class="testimonials_list_block">
+			<img class="testimonials_img" src="client.png">
+			<div class="testimonials_content">
+				<div class="testimonials_content_rectangle"></div>
+				<div class="testimonials_client">
+					<div class="testimonials_client_name">Staciya Trollio</div>
+					<div class="testimonials_client_status">Customer</div>			
+				</div>	
+				<div class="testimonials_client_border">&nbsp;</div>
+				<p class="testimonials_content_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+			</div>
+		</div>
+		<div class="testimonials_list_block">
+			<img class="testimonials_img" src="client.png">
+			<div class="testimonials_content">
+				<div class="testimonials_content_rectangle"></div>
+				<div class="testimonials_client">
+					<div class="testimonials_client_name">Staciya Trollio</div>
+					<div class="testimonials_client_status">Customer</div>			
+				</div>	
+				<div class="testimonials_client_border">&nbsp;</div>
+				<p class="testimonials_content_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+			</div>
+		</div>
+</div>
+
+<div class="map"></div>
+<div class="footer"></div>
+</body>
+

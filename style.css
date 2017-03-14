@@ -1,0 +1,33 @@
+li:nth-of-type(5) a:after{
+ content: "  ⇱  ";
+ transform: scale(-1,1);
+ display: inline-block;
+ margin-left: 5px;
+}
+
+a[href*="http"] {
+	color: #f70;
+}
+
+a[href*="http://google"] {
+	color: grey;
+}
+
+table {
+	width: 500px;
+	border-collapse:collapse;
+	text-align: center;
+	/*border: 1px solid grey; */
+}
+
+td:nth-child(2n+3) {
+	background-color: #faeedd; 
+}
+
+td {
+	border-bottom: 1px solid grey;
+}
+
+tr:nth-child(even) {
+    background-color: #ccccff; 
+}
