@@ -1,0 +1,6 @@
+.portfolio {
+	width: 800px;
+		&__title {
+			font-size: 40px;
+		}
+}

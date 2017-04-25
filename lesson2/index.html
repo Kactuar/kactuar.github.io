@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8"/>
+    <title>Task6</title>
+</head>
+<body>
+<style>
+    .red {
+        padding: 10px;
+        background-color: red;
+        color: white;
+        border-radius: 10px;
+    }
+    .green {
+        padding: 10px;
+        background-color: green;
+        color: white;
+        border-radius: 10px;
+    }
+    .blue {
+        padding: 10px;
+        background-color: blue;
+        color: white;
+        border-radius: 10px;
+    }
+    #red:checked ~ .red {
+        display: none;
+    }
+    #green:checked ~ .green {
+        display: none;
+    }
+    #blue:checked ~ .blue {
+        display: none;
+    }
+</style>
+<form action="#">
+    <div>
+        <input type="checkbox" id="red">
+        <input type="checkbox" id="green">
+        <input type="checkbox" id="blue">
+
+        <label for="red">красные</label>
+        <label for="green">зеленые</label>
+        <label for="blue">синие</label>
+
+        <span class="red">красные</span>
+        <span class="green">зеленые</span>
+        <span class="green">зеленые</span>
+        <span class="red">красные</span>
+        <span class="blue">синие</span>
+        <span class="green">зеленые</span>
+        <span class="red">красные</span>
+        <span class="blue">синие</span>
+        <span class="red">красные</span>
+        <span class="green">зеленые</span>
+        <span class="blue">синие</span>
+    </div>
+</form>
+
+</body>
+</html>

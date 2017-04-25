@@ -1,0 +1,90 @@
+.portfolio {
+	display:flex;	
+	flex-wrap: wrap;	
+	justify-content:center;
+	border:1px solid;
+	
+	&__title {	
+		padding-bottom: 40px;
+		flex-basis:1130px;
+	}
+
+	&__title div:nth-child(1) {		    
+			font-size: 40px;			
+			text-align: center;
+		}
+	&__title div:nth-child(2) {		    
+			font-size: 20px;
+			text-align: center;			
+		}
+
+	&__img-list {		
+		flex-basis:1130px;
+		display:flex;			
+		flex-wrap: wrap;
+		justify-content:space-between;
+	}
+	&__full-foto {
+		position:absolute;
+		z-index: 1;
+	}
+	&__close {
+		background: red;
+		position:absolute;
+		color:white;
+		width:40px;
+		height:40px;
+		top:-20px;		
+		right:20px;
+		text-align: center;
+		font-size: 20px;
+		font-family: Arial;
+		font-weight: bold;
+		padding-top: 6px;
+		box-sizing: border-box;		
+
+		
+	}
+	&__img-case{
+		position: relative;
+		margin-bottom: 20px;
+		
+	}	
+	&__overlay {		
+		opacity: 0;				
+			&_hover:hover {
+				opacity:1;
+			}
+	}
+	&__cover {
+		top:0;
+		left:0;
+		right: 0;
+		bottom: 0;
+		position:absolute;
+		background-color: rgba(37,166,247,90%);
+			}	
+	&__button {
+		position:absolute;		
+		height: 40px;
+		text-align: center;	
+		padding-top: 9px;
+		box-sizing: border-box;	
+	}
+	&__button_zoom {		
+		background-color: rgba(37,166,247,90%);
+		border:1px solid white;
+		border-radius: 3px;
+		width:40px;
+		left:37%;
+		top:45%;			
+	}
+	&__button_link {		
+		background-color: rgba(37,166,247,90%);
+		border:1px solid white;
+		border-radius: 3px;
+		width:40px;
+		left:52%;
+		top:45%;		
+	}
+}
