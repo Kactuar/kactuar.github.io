@@ -2,6 +2,7 @@
 /* Общие стили - переменные */
 /* Закончились общие стили - переменные*/
 body {
+  margin: 0;
   font-family: Montserrat;
 }
 body body,
@@ -169,6 +170,12 @@ body img {
 }
 .header__menu > ul > li:last-child {
   margin-right: 0;
+}
+.header__icon-menu {
+  padding-left: 10px;
+  position: relative;
+  bottom: -9px;
+  font-size: 30px;
 }
 .header__phone {
   padding-left: 15px;

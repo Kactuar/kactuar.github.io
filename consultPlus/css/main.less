@@ -30,8 +30,10 @@
 /* Закончились общие стили - переменные*/
 body {
 	.reset();
+	margin:0;
 	font-family: Montserrat;
 }
+
 .header {
 	background: url(../img/header__background-img.jpg) no-repeat;	
 	background-size: cover;
@@ -77,7 +79,6 @@ body {
 		    bottom: -9px;
 		    font-size: 30px;
 		}
-	}
 	&__phone {
 		.col-padding();
 		.col-3();
@@ -157,9 +158,12 @@ body {
 		padding:105px 0 65px;
 	}
 }
-.about {
+.about {  
+
 	.wrapper();	
+
 	padding: 85px;
+
 	&__flex {
 		.row-flex();	
 		justify-content:center;
