@@ -41,6 +41,12 @@ body {
   font-weight: 400;
   line-height: 17px;
 }
+.header__icon-menu {
+  padding-left: 10px;
+  position: relative;
+  bottom: -9px;
+  font-size: 30px;
+}
 .header__content {
   text-align: center;
 }
