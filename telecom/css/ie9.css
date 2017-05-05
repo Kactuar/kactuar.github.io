@@ -1,0 +1,73 @@
+.flex-container {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.flex-container::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+.logo {
+  float: left;
+}
+@media screen and (max-width: 560px) {
+  .logo {
+    margin-left: calc(37.5% + 10px);
+  }
+}
+.menu {
+  float: left;
+}
+.phone {
+  float: left;
+}
+.banner__header {
+  float: left;
+}
+.banner__text {
+  float: left;
+}
+.banner__link {
+  float: left;
+}
+.banner__button {
+  float: left;
+}
+.content__colum-1 {
+  float: left;
+}
+@media screen and (max-width: 960px) {
+  .content__colum-1 {
+    margin-left: calc(6.25% + 10px);
+  }
+}
+@media screen and (max-width: 560px) {
+  .content__colum-1 {
+    margin-left: calc(12.5% + 10px);
+  }
+}
+.content__colum-2 {
+  float: left;
+}
+.content__colum-3 {
+  float: left;
+}
+@media screen and (max-width: 960px) {
+  .content__colum-3 {
+    margin-left: calc(6.25% + 10px);
+  }
+}
+@media screen and (max-width: 560px) {
+  .content__colum-3 {
+    margin-left: calc(12.5% + 10px);
+  }
+}
+.contact {
+  float: left;
+}
+.footer-menu {
+  float: left;
+}
+.copyright {
+  float: left;
+}

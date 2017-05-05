@@ -153,12 +153,22 @@ body {
 			font-weight: 300;
 			padding-right: 10px;	
 		}
-	}
+	} 
 	&__button {
 		.col();
 		.col-16();
 	}
 }
+
+@media screen and (max-width: 780px) {
+	.banner { 
+		&__header {		
+		font-size: 40px;		
+		padding: 100px 0 20px;		
+	}
+  }
+}
+
 .button {
 	margin-bottom: 160px;		
 	background: transparent;	
@@ -178,6 +188,11 @@ body {
 		height:15px;
 		background: url(../img/button__arrow.png) no-repeat;
 	}	
+}
+@media screen and (max-width: 780px) {
+	.button {
+		margin-bottom: 70px;
+  }
 }
 
 .content {
