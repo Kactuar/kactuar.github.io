@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	Первый
+	<script>
+	/*	function solution(a,b) {
+			var c = a * b;
+			var d = c.toString(2);	
+			var e = d.match(/[1]/g);
+			var f  = e.reduce(function (previous, current) {
+				return +previous + +current;
+			})
+			alert(f);
+		}
+		solution(3,7); */
+	</script>
+	Второй
+	<script>
+	a = [10,0,8,2,-1,12,11,3]
+	/* b = [-1,0,2,3,8,10,11,12] */
+		function solution2 (a) {
+			var result = [];				
+			a = a.sort(function(a,b) {return a - b})			
+			var maxRange = a.reduce(function (prev, cur) {
+				result.push(prev);
+				return prev + cur;				
+			})
+			result.push(maxRange);
+			alert(result);
+		}
+		solution2(a);
+	</script>
+</body>
+</html>
