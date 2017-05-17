@@ -14,25 +14,79 @@
 			var f  = e.reduce(function (previous, current) {
 				return +previous + +current;
 			})
-			alert(f);
+			alert('Первая задача' f);
 		}
-		solution(3,7); */
+		solution(3,7); 
+	*/
 	</script>
 	Второй
 	<script>
-	a = [10,0,8,2,-1,12,11,3]
-	/* b = [-1,0,2,3,8,10,11,12] */
+	/*
+	a = [10,0,8,2,-1,-10,12,11,3]
+	
 		function solution2 (a) {
-			var result = [];				
+			var maxDist = 0;
 			a = a.sort(function(a,b) {return a - b})			
 			var maxRange = a.reduce(function (prev, cur) {
-				result.push(prev);
-				return prev + cur;				
+				if (cur - prev > maxDist )	maxDist = cur - prev;				
+				return cur;
 			})
-			result.push(maxRange);
-			alert(result);
+			
+			alert('Вторая задача' Math.floor(maxDist/2));
 		}
 		solution2(a);
+	*/
 	</script>
+	Третий 
+	<script>
+	//a = [4,6,2,2,6,6,4];
+	a = [4,6,2,2,6,6,4,6];
+	b = [];
+	for (var z = 0; z < 11; z++) {
+		b.push(z);
+	}
+	
+	//a[n] = n для каждого n(0 <= n <= 10);
+
+		function solution3 (a) {
+			var b = a.length;
+			var c = b-1;			
+			var result = 0;
+			/*
+			a.reduce(function (prev, cur, i, arr) {
+					
+				if (prev == cur) {
+					result = 0;					
+					return prev = cur;
+				}
+				else { 
+					++result;
+					return prev = cur;
+				}
+
+			})	*/			
+			for (var i = 0; i < b; i++ ) {								
+					if (a[i] != a[c]) {						
+						result = c - i;
+						break;						
+					}					
+			}
+			alert(result);
+		}
+
+		solution3(a);
+	</script>
+<!-- 
+for (var i = 0; i < b; i++ ) {								
+
+				for (var j = i; j < b; j++) {					
+					//alert(a[i] +' и '+ a[j])
+					if (a[i] != a[j]) {
+						result = Math.max(result, j - i);				
+					}
+				}
+			}
+-->
 </body>
 </html>
+					
