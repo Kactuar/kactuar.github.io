@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="src/SpeechProTTS.js"></script>
+</head>
+<body>
+<script>
+  let config = {
+    username: 'decimator@yandex.ru',
+    password: 'pUt7V49?sf',
+    domain_id: '5857'
+  }
+  let tts = new SpeechProTTS({});
+  console.log('tts.getLanguages();', tts.createSession(config));
+
+
+  tts.complete = function() {
+    //  tts object initialized, here you can use the available methods
+
+    // Events
+    tts.synthesizeComplete = function(result) {
+      //  result = {
+      //    "b64Data": base64 data,
+      //    "blob": object blob (type = 'audio/wav'),
+      //    "blobUrl": blobUrl (object URL.createObjectURL)
+      //  }
+    }
+
+    tts.synthesizeError = function(error) {
+      // Synthesis error
+    }
+
+    tts.synthesizeSocketComplete = function(result) {
+      //  result = {
+      //    "blob": object blob (type = 'audio/wav'),
+      //    "blobUrl": blobUrl (object URL.createObjectURL)
+      //  }
+    }
+
+    tts.synthesizeSocketOnline = function(arraybuffer) {
+      //  result socket message
+    }
+  }
+
+</script>
+</body>
+</html>
