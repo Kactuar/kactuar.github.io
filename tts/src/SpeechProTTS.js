@@ -1,7 +1,7 @@
 'use strict';
 
 const tts_default_options = {
-  "host": "https://cloud.speechpro.com/vksession/rest/session",
+  "host": "https://cloud.speechpro.com/vksession/rest/",
   "voice": "Alexander",
   "language": "Russian",
   "numChannels": 1,
